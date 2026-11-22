@@ -1,0 +1,54 @@
+/* ==========================================================================
+   responsive.css — composition changes per breakpoint (not just scaling)
+   xs <576 · sm ≥576 · md ≥768 · lg ≥992 · xl ≥1200 · xxl ≥1400
+   ========================================================================== */
+
+@media (min-width: 1920px) {
+  :root { --px-header-h: 72px; }
+  .hero-photo { grid-column: 7 / 11; }
+}
+
+@media (max-width: 1199.98px) {
+  .zone-brand .meta { display: none; }
+  .px-nav .nav-link { padding: 0 0.8rem !important; }
+  .px-nav .nav-link::after { left: 0.8rem; right: 0.8rem; }
+  .hero-photo { grid-column: 6 / 12; }
+}
+
+/* Tablet: photo becomes the backdrop column, word crosses it */
+@media (max-width: 991.98px) {
+  .hero { min-height: auto; }
+  .hero-grid { grid-template-rows: auto auto auto auto; }
+  .hero-photo { grid-column: 4 / 13; grid-row: 2 / 4; }
+  .hero-photo .frame { min-height: 0; aspect-ratio: 4 / 5; height: auto; }
+  .hero-photo figcaption { display: none; }
+  .hero-word { grid-row: 2; align-self: start; margin-top: 2rem; font-size: clamp(5rem, 24vw, 12rem); }
+  .hero-mini { display: none; }
+  .hero-copy { grid-column: 1 / 9; grid-row: 4; margin-top: 1rem; }
+  .hero-side { display: none; }
+  .stats-strip .cell:nth-child(3) { border-right: 0; }
+  .stats-strip .cell:nth-child(-n+3) { border-bottom: 1px solid var(--px-line); }
+}
+
+/* Phones: single column composition, word overlaps the top of the frame */
+@media (max-width: 575.98px) {
+  :root { --px-header-h: 56px; }
+  .px-logo { font-size: 1.35rem; }
+  .zone-brand { padding-right: 0; border-right: 0; }
+  .hero-top .meta:last-child { display: none; }
+  .hero-word { grid-column: 1 / -1; font-size: 24vw; margin-top: 0.5rem; }
+  .hero-word .offset { padding-left: 0.18em; }
+  .hero-photo { grid-column: 3 / 13; grid-row: 3; margin-top: -14vw; }
+  .hero-copy { grid-column: 1 / -1; }
+  .stats-strip .cell { border-right: 0 !important; border-bottom: 1px solid var(--px-line); }
+  .stats-strip .cell:nth-child(odd) { border-right: 1px solid var(--px-line) !important; }
+  .page-head .display-word { font-size: 18vw; }
+  .coll-thumbs { grid-template-columns: repeat(2, 1fr); }
+  .toolbar { position: static; }
+  .btn { --bs-btn-padding-y: 0.85rem; }
+  .filter-chips .btn { --bs-btn-padding-y: 0.65rem; flex: 1 1 auto; justify-content: center; }
+}
+
+@media (max-width: 379.98px) {
+  .filter-chips .btn .count { display: none; }
+}

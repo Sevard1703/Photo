@@ -1,168 +1,241 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Блог Анны Воронцовой: советы по подготовке к съёмке, история работы фотографа и мысли о фотографии и жизни." />
-    <meta property="og:title" content="Блог | Анна Воронцова" />
-    <meta property="og:description" content="Моменты, мысли и истории о фотографии, любви, свете и жизни." />
-    <meta property="og:image" content="https://picsum.photos/id/1055/1200/800" />
-    <title>Блог | Анна Воронцова</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <a class="brand" href="index.html" aria-label="Анна Воронцова, главная страница">
-          <span class="brand-mark">A</span>
-          <span>Анна Воронцова</span>
-        </a>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Журнал архива PHOTO.: заметки о свете, местах и съёмке.">
+  <meta name="theme-color" content="#08090b">
+  <meta property="og:title" content="Journal — PHOTO. Visual Archive">
+  <meta property="og:description" content="Журнал архива PHOTO.: заметки о свете, местах и съёмке.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/archive/0004-1280.jpg">
+  <title>Journal — PHOTO. Visual Archive</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="blog">
+  <a class="visually-hidden-focusable" href="#main">К содержанию</a>
+  <div class="grid-lines" aria-hidden="true"></div>
 
-        <button class="mobile-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
-
-        <nav class="site-nav" aria-label="Главное меню">
-          <a href="index.html">Главная</a>
-          <a href="portfolio.html">Портфолио</a>
-          <a href="about.html">Обо мне</a>
-          <a href="services.html">Услуги</a>
-          <a class="active" href="blog.html">Блог</a>
-          <a href="contact.html">Контакты</a>
-        </nav>
-
-        <div class="nav-actions">
-          <button class="theme-toggle" type="button" aria-label="Переключить тему">☀</button>
-          <a class="btn btn-primary btn-small" href="contact.html">Заказать</a>
+  <header class="px-header">
+    <nav class="navbar navbar-expand-lg h-100" aria-label="Основная навигация">
+      <div class="container-px">
+        <div class="zone zone-brand">
+          <a class="px-logo" href="index.html" aria-label="PHOTO. — на главную">PHOTO<span class="dot">.</span></a>
+          <span class="meta">§05 — Journal</span>
+        </div>
+        <button class="btn btn-ghost menu-toggle d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu">Menu <span class="text-cyan">+</span></button>
+        <div class="offcanvas offcanvas-end px-offcanvas" tabindex="-1" id="siteMenu" aria-labelledby="siteMenuLabel">
+          <div class="offcanvas-header">
+            <a class="px-logo" href="index.html" id="siteMenuLabel">PHOTO<span class="dot">.</span></a>
+            <button type="button" class="btn btn-ghost menu-toggle" data-bs-dismiss="offcanvas" aria-label="Закрыть меню">Close <span class="text-cyan">×</span></button>
+          </div>
+          <div class="offcanvas-body p-lg-0 d-lg-flex flex-lg-row align-items-lg-stretch flex-grow-1">
+            <ul class="navbar-nav px-nav ps-lg-3 me-lg-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html"><span class="n">01</span>Index</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html"><span class="n">02</span>Archive</a></li>
+              <li class="nav-item"><a class="nav-link" href="collections.html"><span class="n">03</span>Collections</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html"><span class="n">04</span>About</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="n">05</span>More <i class="bi bi-chevron-down" aria-hidden="true"></i></a><ul class="dropdown-menu"><li><h2 class="dropdown-header">Также в архиве</h2></li><li><a class="dropdown-item active" href="blog.html">Journal <span class="meta">Записи</span></a></li><li><a class="dropdown-item" href="services.html">Commissions <span class="meta">Съёмки на заказ</span></a></li></ul></li>
+            </ul>
+            <div class="zone zone-status">
+              <span class="meta d-flex align-items-center gap-2" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="24 кадров · 5 коллекций · индекс обновлён при сборке"><span class="status-dot"></span>Archive online</span>
+              <a class="btn btn-px" href="contact.html">Contact <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
       </div>
+    </nav>
+  </header>
+
+  <main id="main">
+<header class="page-head container-px">
+      <p class="meta mb-3"><span class="text-cyan">§05</span> / Journal / 6 entries · 1 published</p>
+      <h1 class="display-word" data-fit>Journal</h1>
     </header>
 
-    <main>
-      <section class="page-hero">
-        <div class="container">
-          <div class="page-title-wrap reveal">
-            <span class="page-kicker">Блог</span>
-            <h1 class="page-title">Свет, любовь и повседневная магия.</h1>
-          </div>
+    <section class="px-section container-px" aria-label="Записи журнала">
+      <article class="row g-4 g-lg-5 align-items-end mb-5 pb-lg-4 position-relative">
+        <div class="col-lg-8"><div class="frame " style="--ar: 2000 / 857; --ph: #7b7b7b"><img src="images/archive/0011-1280.jpg" srcset="images/archive/0011-640.jpg 640w, images/archive/0011-1280.jpg 1280w, images/archive/0011-2000.jpg 2000w" sizes="(min-width: 992px) 66vw, 100vw" width="2000" height="857" alt="Шесть хребтов в дымке — каждый следующий светлее." loading="lazy" decoding="async"></div></div>
+        <div class="col-lg-4">
+          <p class="meta mb-3"><span class="text-cyan">Entry 01</span> · 8 августа 2026 · Места</p>
+          <h2 class="display-6 mb-3"><a class="stretched-link" href="blog-post.html">Как выбрать локацию, чтобы она стала частью истории</a></h2>
+          <p class="text-2">О чём важно думать, выбирая место: свет, ритм дня, движение и характер пространства.</p>
+          <span class="link-arrow">Read <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
         </div>
-      </section>
+      </article>
 
-      <section class="section">
-        <div class="container">
-          <div class="blog-grid reveal">
-            <article class="article-card">
-              <img src="https://picsum.photos/id/1006/900/600" alt="Рассветная прогулка" loading="lazy" />
-              <div class="article-content">
-                <span class="article-meta">8 августа 2026 · Свадьбы</span>
-                <h3>Как выбрать локацию для свадебной съёмки, чтобы она стала частью истории</h3>
-                <p>О чем важно думать, выбирая место для вашей истории: свет, ритм дня, движение и характер пространства.</p>
-                <a class="btn btn-secondary btn-small" href="blog-post.html">Читать</a>
-              </div>
-            </article>
-
-            <article class="article-card">
-              <img src="https://picsum.photos/id/1049/900/600" alt="Портретная съёмка" loading="lazy" />
-              <div class="article-content">
-                <span class="article-meta">21 июля 2026 · Портреты</span>
-                <h3>Лёгкие советы для спокойной и красивой портретной съёмки</h3>
-                <p>Как чувствовать себя свободно перед камерой, чтобы кадры получились живыми, а не “постановочными”.</p>
-                <a class="btn btn-secondary btn-small" href="blog-post.html">Читать</a>
-              </div>
-            </article>
-
-            <article class="article-card">
-              <img src="https://picsum.photos/id/1031/900/600" alt="Пара на прогулке" loading="lazy" />
-              <div class="article-content">
-                <span class="article-meta">13 июня 2026 · Love Story</span>
-                <h3>Чем отличается romance-подход от “идеального” сценария в love story</h3>
-                <p>Когда важнее не кадр “как будто из фильма”, а ощущение, что это именно ваша история, с ритмом и дыханием.</p>
-                <a class="btn btn-secondary btn-small" href="blog-post.html">Читать</a>
-              </div>
-            </article>
-
-            <article class="article-card">
-              <img src="https://picsum.photos/id/1058/900/600" alt="Городской свет" loading="lazy" />
-              <div class="article-content">
-                <span class="article-meta">2 мая 2026 · Техника</span>
-                <h3>Свет в городе: как работать с вечерним освещением без потери атмосферы</h3>
-                <p>Небольшая прогулка по главным правилам света в городе и том, как не “убить” натуральную красоту кадра.</p>
-                <a class="btn btn-secondary btn-small" href="blog-post.html">Читать</a>
-              </div>
-            </article>
-
-            <article class="article-card">
-              <img src="https://picsum.photos/id/1028/900/600" alt="Семейные моменты" loading="lazy" />
-              <div class="article-content">
-                <span class="article-meta">18 апреля 2026 · Репортаж</span>
-                <h3>Почему семейный репортаж лучше всего снимается в движении</h3>
-                <p>О том, как достичь естественности и как сохранить в кадре не только эмоции, но и ритм обычного, счастливого дня.</p>
-                <a class="btn btn-secondary btn-small" href="blog-post.html">Читать</a>
-              </div>
-            </article>
-
-            <article class="article-card">
-              <img src="https://picsum.photos/id/109/900/600" alt="Планирование съёмки" loading="lazy" />
-              <div class="article-content">
-                <span class="article-meta">5 марта 2026 · Подготовка</span>
-                <h3>Что стоит заранее продумать перед съёмкой, чтобы день прошёл спокойно</h3>
-                <p>От тайминга до одежды, музыки и деталей — несколько небольших решений, которые делают день комфортнее.</p>
-                <a class="btn btn-secondary btn-small" href="blog-post.html">Читать</a>
-              </div>
-            </article>
-          </div>
+      <div class="section-index">
+        <span class="meta num">—</span>
+        <h2 class="meta mb-0 text-uppercase">In preparation</h2>
+        <span class="line"></span>
+        <span class="meta">Drafts / text pending</span>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 g-lg-4">
+        <div class="col">
+          <article class="card post-card">
+            <div class="frame " style="--ar: 2000 / 1333; --ph: #736d65"><img src="images/archive/0010-1280.jpg" srcset="images/archive/0010-640.jpg 640w, images/archive/0010-1280.jpg 1280w, images/archive/0010-2000.jpg 2000w" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw" width="2000" height="1333" alt="Полдень. Тень режет стену пополам." loading="lazy" decoding="async"></div>
+            <div class="card-body p-4">
+              <p class="meta mb-2">Entry 02 · 21 июля 2026 · Портреты</p>
+              <h3 class="card-title">Лёгкие советы для спокойной и красивой портретной съёмки</h3>
+              <p class="small mb-3">Как чувствовать себя свободно перед камерой, чтобы кадры получились живыми, а не «постановочными».</p>
+              <span class="badge-px">Draft</span>
+            </div>
+          </article>
         </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a class="brand" href="index.html" aria-label="Главная">
-              <span class="brand-mark">A</span>
-              <span>Анна Воронцова</span>
-            </a>
-            <p>О фотографиях, свете, жизни и том, как сохранить настоящее в памяти.</p>
-          </div>
-
-          <div>
-            <h3>Навигация</h3>
-            <ul class="footer-list">
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="portfolio.html">Портфолио</a></li>
-              <li><a href="about.html">Обо мне</a></li>
-              <li><a href="services.html">Услуги</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Контакты</h3>
-            <ul class="footer-list">
-              <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
-              <li><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></li>
-              <li><a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noreferrer">Instagram</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Город</h3>
-            <ul class="footer-list">
-              <li><span>Москва</span></li>
-              <li><span>Пн–Вс</span></li>
-            </ul>
-          </div>
+        <div class="col">
+          <article class="card post-card">
+            <div class="frame " style="--ar: 1600 / 2000; --ph: #1c181b"><img src="images/archive/0003-1280.jpg" srcset="images/archive/0003-640.jpg 512w, images/archive/0003-1280.jpg 1024w, images/archive/0003-2000.jpg 1600w" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw" width="1600" height="2000" alt="Полный расфокус. От города остаются только круги света." loading="lazy" decoding="async"></div>
+            <div class="card-body p-4">
+              <p class="meta mb-2">Entry 03 · 13 июня 2026 · Love Story</p>
+              <h3 class="card-title">Чем романтический подход отличается от «идеального» сценария</h3>
+              <p class="small mb-3">Когда важнее не кадр «как из фильма», а ощущение, что это именно ваша история.</p>
+              <span class="badge-px">Draft</span>
+            </div>
+          </article>
         </div>
-
-        <div class="meta-row">
-          <span>© <span id="currentYear">2026</span> Анна Воронцова</span>
-          <span>Идеи, свет и слова</span>
+        <div class="col">
+          <article class="card post-card">
+            <div class="frame " style="--ar: 2000 / 1333; --ph: #101320"><img src="images/archive/0001-1280.jpg" srcset="images/archive/0001-640.jpg 640w, images/archive/0001-1280.jpg 1280w, images/archive/0001-2000.jpg 2000w" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw" width="2000" height="1333" alt="Окна, которые ещё не спят. Город после полуночи, собранный из сотен светящихся ячеек." loading="lazy" decoding="async"></div>
+            <div class="card-body p-4">
+              <p class="meta mb-2">Entry 04 · 2 мая 2026 · Техника</p>
+              <h3 class="card-title">Свет в городе: вечернее освещение без потери атмосферы</h3>
+              <p class="small mb-3">Главные правила городского света и то, как не «убить» натуральную красоту кадра.</p>
+              <span class="badge-px">Draft</span>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card post-card">
+            <div class="frame " style="--ar: 2000 / 1125; --ph: #1a1618"><img src="images/archive/0002-1280.jpg" srcset="images/archive/0002-640.jpg 640w, images/archive/0002-1280.jpg 1280w, images/archive/0002-2000.jpg 2000w" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw" width="2000" height="1125" alt="Длинная выдержка: трасса превращается в линии красного и белого света." loading="lazy" decoding="async"></div>
+            <div class="card-body p-4">
+              <p class="meta mb-2">Entry 05 · 18 апреля 2026 · Репортаж</p>
+              <h3 class="card-title">Почему репортаж лучше всего снимается в движении</h3>
+              <p class="small mb-3">Как сохранить в кадре не только эмоции, но и ритм обычного дня.</p>
+              <span class="badge-px">Draft</span>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card post-card">
+            <div class="frame " style="--ar: 2000 / 2000; --ph: #575757"><img src="images/archive/0007-1280.jpg" srcset="images/archive/0007-640.jpg 640w, images/archive/0007-1280.jpg 1280w, images/archive/0007-2000.jpg 2000w" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw" width="2000" height="2000" alt="Лестница, одинокая фигура и диагональ, которая держит весь кадр." loading="lazy" decoding="async"></div>
+            <div class="card-body p-4">
+              <p class="meta mb-2">Entry 06 · 5 марта 2026 · Подготовка</p>
+              <h3 class="card-title">Что продумать перед съёмкой, чтобы день прошёл спокойно</h3>
+              <p class="small mb-3">От тайминга до одежды и деталей — небольшие решения, которые делают день комфортнее.</p>
+              <span class="badge-px">Draft</span>
+            </div>
+          </article>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <button class="scroll-top" type="button" aria-label="Наверх">↑</button>
-    <script src="js/main.js"></script>
-  </body>
+  <footer class="px-footer">
+    <div class="container-px pt-5">
+      <div class="row g-4 g-lg-5">
+        <div class="col-12 col-lg-4">
+          <p class="meta mb-3"><span class="status-dot me-2"></span>Visual archive — est. unknown</p>
+          <p class="text-2 mb-4">Цифровой архив фотографий: моменты, места, фрагменты. Индекс из 24 кадров в 5 коллекциях.</p>
+          <div class="social d-flex gap-2">
+            <a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noopener" aria-label="Instagram" data-bs-toggle="tooltip" data-bs-title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://t.me/anna_vorontsova_photo" target="_blank" rel="noopener" aria-label="Telegram" data-bs-toggle="tooltip" data-bs-title="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/79991234567" target="_blank" rel="noopener" aria-label="WhatsApp" data-bs-toggle="tooltip" data-bs-title="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto:hello@annavorontsova.ru" aria-label="Email" data-bs-toggle="tooltip" data-bs-title="Email"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h2>Archive</h2>
+          <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="portfolio.html">Archive</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h2>More</h2>
+          <ul>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="services.html">Commissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></li>
+            <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+            <li><span class="text-2">Москва · Пн–Вс, 10:00–20:00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-px overflow-hidden" aria-hidden="true">
+      <p class="display-word footer-word mt-5 mb-0" data-fit>PHOTO<span class="dot">.</span></p>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-px py-3 d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span class="meta">© <span data-year>2026</span> Анна Воронцова · Photo archive</span>
+        <span class="meta">Frames 0001–0024 — generated placeholders</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen photo viewer (Bootstrap modal) -->
+  <div class="modal fade viewer" id="viewer" tabindex="-1" aria-labelledby="viewerTitle" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="viewer-bar">
+          <div class="d-flex align-items-center gap-3 gap-md-4 min-w-0">
+            <span class="viewer-counter" aria-live="polite"><span class="cur" data-v="pos">01</span> / <span data-v="total">24</span></span>
+            <span class="meta d-none d-sm-inline">Archive / <b data-v="id">0001</b></span>
+            <span class="badge-px is-cyan" data-v="category">NIGHT</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <span class="meta kbd-hint d-none d-lg-inline me-2"><kbd>←</kbd> <kbd>→</kbd> navigate · <kbd>Esc</kbd> close</span>
+            <button type="button" class="btn btn-px btn-square" data-v-info data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="Frame record" data-bs-content="—" aria-label="Технические данные кадра"><i class="bi bi-info-lg" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-px btn-square" data-bs-dismiss="modal" aria-label="Закрыть просмотр"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="viewer-stage">
+          <button type="button" class="btn btn-px btn-square viewer-nav prev" data-v-prev aria-label="Предыдущий кадр"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+          <img class="viewer-img" data-v="img" alt="" draggable="false">
+          <button type="button" class="btn btn-px btn-square viewer-nav next" data-v-next aria-label="Следующий кадр"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          <span class="viewer-loading meta">Scanning frame…</span>
+        </div>
+        <div class="viewer-bar bottom">
+          <div>
+            <span class="meta" data-v="collection">Collection</span>
+            <h2 class="viewer-title" id="viewerTitle" data-v="title">Title</h2>
+            <p class="viewer-text" data-v="text"></p>
+          </div>
+          <dl class="viewer-specs meta mb-0">
+            <dt>Format</dt><dd data-v="format">—</dd>
+            <dt>Tone</dt><dd data-v="tone">—</dd>
+            <dt>Source</dt><dd>Generated</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 start-0 p-3" id="toasts" aria-live="polite"></div>
+  <button type="button" class="btn btn-px btn-square to-top" data-to-top aria-label="Наверх"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/viewer.js"></script>
+</body>
 </html>

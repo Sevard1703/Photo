@@ -1,213 +1,275 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Портфолио Анны Воронцовой: свадебная и портретная фотография, love story, репортажи и коммерческие съёмки." />
-    <meta property="og:title" content="Портфолио | Анна Воронцова" />
-    <meta property="og:description" content="Избранные истории и образы из свадебных, семейных и портретных съёмок." />
-    <meta property="og:image" content="https://picsum.photos/id/1016/1200/800" />
-    <title>Портфолио | Анна Воронцова</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <a class="brand" href="index.html" aria-label="Анна Воронцова, главная страница">
-          <span class="brand-mark">A</span>
-          <span>Анна Воронцова</span>
-        </a>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Полный индекс архива PHOTO.: фильтр по категориям, поиск, сортировка, режим сетки и таблицы.">
+  <meta name="theme-color" content="#08090b">
+  <meta property="og:title" content="Archive — PHOTO. Visual Archive">
+  <meta property="og:description" content="Полный индекс архива PHOTO.: фильтр по категориям, поиск, сортировка, режим сетки и таблицы.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/archive/0004-1280.jpg">
+  <title>Archive — PHOTO. Visual Archive</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="portfolio">
+  <a class="visually-hidden-focusable" href="#main">К содержанию</a>
+  <div class="grid-lines" aria-hidden="true"></div>
 
-        <button class="mobile-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+  <header class="px-header">
+    <nav class="navbar navbar-expand-lg h-100" aria-label="Основная навигация">
+      <div class="container-px">
+        <div class="zone zone-brand">
+          <a class="px-logo" href="index.html" aria-label="PHOTO. — на главную">PHOTO<span class="dot">.</span></a>
+          <span class="meta">§02 — Archive</span>
+        </div>
+        <button class="btn btn-ghost menu-toggle d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu">Menu <span class="text-cyan">+</span></button>
+        <div class="offcanvas offcanvas-end px-offcanvas" tabindex="-1" id="siteMenu" aria-labelledby="siteMenuLabel">
+          <div class="offcanvas-header">
+            <a class="px-logo" href="index.html" id="siteMenuLabel">PHOTO<span class="dot">.</span></a>
+            <button type="button" class="btn btn-ghost menu-toggle" data-bs-dismiss="offcanvas" aria-label="Закрыть меню">Close <span class="text-cyan">×</span></button>
+          </div>
+          <div class="offcanvas-body p-lg-0 d-lg-flex flex-lg-row align-items-lg-stretch flex-grow-1">
+            <ul class="navbar-nav px-nav ps-lg-3 me-lg-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html"><span class="n">01</span>Index</a></li>
+              <li class="nav-item"><a class="nav-link active" href="portfolio.html" aria-current="page"><span class="n">02</span>Archive</a></li>
+              <li class="nav-item"><a class="nav-link" href="collections.html"><span class="n">03</span>Collections</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html"><span class="n">04</span>About</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="n">05</span>More <i class="bi bi-chevron-down" aria-hidden="true"></i></a><ul class="dropdown-menu"><li><h2 class="dropdown-header">Также в архиве</h2></li><li><a class="dropdown-item" href="blog.html">Journal <span class="meta">Записи</span></a></li><li><a class="dropdown-item" href="services.html">Commissions <span class="meta">Съёмки на заказ</span></a></li></ul></li>
+            </ul>
+            <div class="zone zone-status">
+              <span class="meta d-flex align-items-center gap-2" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="24 кадров · 5 коллекций · индекс обновлён при сборке"><span class="status-dot"></span>Archive online</span>
+              <a class="btn btn-px" href="contact.html">Contact <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <nav class="site-nav" aria-label="Главное меню">
-          <a href="index.html">Главная</a>
-          <a class="active" href="portfolio.html">Портфолио</a>
-          <a href="about.html">Обо мне</a>
-          <a href="services.html">Услуги</a>
-          <a href="blog.html">Блог</a>
-          <a href="contact.html">Контакты</a>
-        </nav>
-
-        <div class="nav-actions">
-          <button class="theme-toggle" type="button" aria-label="Переключить тему">☀</button>
-          <a class="btn btn-primary btn-small" href="contact.html">Заказать</a>
+  <main id="main">
+<header class="page-head container-px">
+      <div class="row align-items-end g-4">
+        <div class="col-lg-9">
+          <p class="meta mb-3"><span class="text-cyan">§02</span> / Full index / frames 0001 — 0024</p>
+          <h1 class="display-word" data-fit>Archive<span class="text-cyan">.</span></h1>
+        </div>
+        <div class="col-lg-3">
+          <div class="head-meta">
+            <span class="meta">Showing <b data-shown>24 / 24</b></span>
+            <span class="meta">Categories <b>05</b> · Collections <b>05</b></span>
+            <span class="meta"><span class="status-dot me-2"></span>Index updated</span>
+          </div>
         </div>
       </div>
     </header>
 
-    <main>
-      <section class="page-hero">
-        <div class="container">
-          <div class="page-title-wrap reveal">
-            <span class="page-kicker">Портфолио</span>
-            <h1 class="page-title">Моменты, которые хочется переживать снова.</h1>
+    <!-- Toolbar: category filter · search · sort / tone dropdowns · view mode -->
+    <div class="toolbar">
+      <div class="container-px py-3">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-xl">
+            <div class="filter-chips" role="radiogroup" aria-label="Категория">
+              <input type="radio" class="btn-check" name="category" id="cat-all" value="all" checked>
+              <label class="btn" for="cat-all">All <span class="count" data-cat-count="all">24</span></label>
+              <input type="radio" class="btn-check" name="category" id="cat-night" value="night">
+              <label class="btn" for="cat-night">Night <span class="count" data-cat-count="night">05</span></label>
+              <input type="radio" class="btn-check" name="category" id="cat-architecture" value="architecture">
+              <label class="btn" for="cat-architecture">Architecture <span class="count" data-cat-count="architecture">05</span></label>
+              <input type="radio" class="btn-check" name="category" id="cat-nature" value="nature">
+              <label class="btn" for="cat-nature">Nature <span class="count" data-cat-count="nature">05</span></label>
+              <input type="radio" class="btn-check" name="category" id="cat-water" value="water">
+              <label class="btn" for="cat-water">Water <span class="count" data-cat-count="water">04</span></label>
+              <input type="radio" class="btn-check" name="category" id="cat-abstract" value="abstract">
+              <label class="btn" for="cat-abstract">Abstract <span class="count" data-cat-count="abstract">05</span></label>
+            </div>
+          </div>
+          <div class="col-12 col-md">
+            <form class="input-group" role="search" aria-label="Поиск по архиву">
+              <span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
+              <input class="form-control" type="search" placeholder="Search: title, id, mood…" aria-label="Поиск по архиву" data-archive-search>
+              <span class="input-group-text d-none d-sm-flex">⏎</span>
+            </form>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex gap-2">
+              <!-- Button dropdown: sort -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-px dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span class="d-none d-sm-inline">Sort: </span><span data-sort-label>Index ↑</span></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h2 class="dropdown-header">Sort frames</h2></li>
+                  <li><a class="dropdown-item" href="#" data-sort="index-asc">Index ↑ <span class="meta">0001→</span></a></li>
+                  <li><a class="dropdown-item" href="#" data-sort="index-desc">Index ↓ <span class="meta">→0001</span></a></li>
+                  <li><a class="dropdown-item" href="#" data-sort="title">Title A–Z</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#" data-sort="vertical">Vertical first <i class="bi bi-phone" aria-hidden="true"></i></a></li>
+                  <li><a class="dropdown-item" href="#" data-sort="wide">Wide first <i class="bi bi-aspect-ratio" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+              <!-- Split button dropdown: tone -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-px" data-tone="all" data-bs-toggle="tooltip" data-bs-title="Сбросить фильтр тона"><span data-tone-label>All tones</span></button>
+                <button type="button" class="btn btn-px dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Выбрать тон</span></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#" data-tone="all">All tones</a></li>
+                  <li><a class="dropdown-item" href="#" data-tone="MONO">Mono <span class="meta">9</span></a></li>
+                  <li><a class="dropdown-item" href="#" data-tone="COLOR">Color <span class="meta">15</span></a></li>
+                </ul>
+              </div>
+              <div class="btn-group view-toggle" role="group" aria-label="Режим отображения">
+                <input type="radio" class="btn-check" name="view" id="view-grid" value="grid" checked>
+                <label class="btn btn-px" for="view-grid" data-bs-toggle="tooltip" data-bs-title="Сетка"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span class="visually-hidden">Сетка</span></label>
+                <input type="radio" class="btn-check" name="view" id="view-list" value="list">
+                <label class="btn btn-px" for="view-list" data-bs-toggle="tooltip" data-bs-title="Таблица"><i class="bi bi-list-columns-reverse" aria-hidden="true"></i><span class="visually-hidden">Таблица</span></label>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section class="page-section">
-        <div class="container">
-          <div class="filter-bar reveal" aria-label="Фильтры портфолио">
-            <button class="filter-btn is-active" type="button" data-filter="all">Все</button>
-            <button class="filter-btn" type="button" data-filter="wedding">Свадьбы</button>
-            <button class="filter-btn" type="button" data-filter="portrait">Портреты</button>
-            <button class="filter-btn" type="button" data-filter="love">Love Story</button>
-            <button class="filter-btn" type="button" data-filter="reportage">Репортаж</button>
-            <button class="filter-btn" type="button" data-filter="commercial">Коммерция</button>
-          </div>
+        <div class="mt-3 d-none" data-collection-chip>
+          <span class="badge-px is-cyan d-inline-flex align-items-center gap-2">Collection <span data-collection-name></span>
+            <button type="button" class="btn-close btn-close-white" aria-label="Снять фильтр коллекции"></button></span>
         </div>
-      </section>
-
-      <section class="section-sm">
-        <div class="container">
-          <div class="portfolio-grid reveal" aria-label="Галерея фотографий">
-            <article class="portfolio-item" data-category="wedding" data-span="wide" data-lightbox-image="https://picsum.photos/id/1008/1400/900" data-lightbox-title="Вечерняя свадьба в замке" data-lightbox-description="Тёплый летний вечер, музыка и лёгкий ветер. Съёмка про семейную историю и красивые детали, которые хочется хранить долгие годы." data-lightbox-meta="Свадьба · Замок">
-              <img src="https://picsum.photos/id/1008/900/700" alt="Свадебная фотография в замке" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Вечерняя свадьба</strong>
-                <span>Свадьбы</span>
-              </div>
-            </article>
-
-            <article class="portfolio-item" data-category="portrait" data-span="normal" data-lightbox-image="https://picsum.photos/id/1012/1200/800" data-lightbox-title="Портрет в тёплых тонах" data-lightbox-description="Мягкий дневной свет и спокойный ритм съёмки, которые позволяют человеку раскрыться без искусственности." data-lightbox-meta="Портрет · Москва">
-              <img src="https://picsum.photos/id/1012/800/1000" alt="Портрет в тёплых тонах" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Портрет в тёплых тонах</strong>
-                <span>Портреты</span>
-              </div>
-            </article>
-
-            <article class="portfolio-item" data-category="love" data-span="tall" data-lightbox-image="https://picsum.photos/id/1015/1200/800" data-lightbox-title="Love story в лесу" data-lightbox-description="История, где важны не позы, а ритм, взгляд и настоящая эмоциональная связь между людьми." data-lightbox-meta="Love story · Лес">
-              <img src="https://picsum.photos/id/1015/800/1200" alt="Пара на прогулке в лесу" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Love story</strong>
-                <span>Любовная история</span>
-              </div>
-            </article>
-
-            <article class="portfolio-item" data-category="reportage" data-span="small" data-lightbox-image="https://picsum.photos/id/1020/1200/800" data-lightbox-title="Репортаж в центре Москвы" data-lightbox-description="Когда день идёт своим ходом, а камера просто фиксирует живую магию присутствия и чувства." data-lightbox-meta="Репортаж · Москва">
-              <img src="https://picsum.photos/id/1020/700/900" alt="Репортаж семейной прогулки" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Семейный день</strong>
-                <span>Репортаж</span>
-              </div>
-            </article>
-
-            <article class="portfolio-item" data-category="commercial" data-span="normal" data-lightbox-image="https://picsum.photos/id/1036/1400/900" data-lightbox-title="Съемка для бренда" data-lightbox-description="Деловая и эстетичная визуальная история для бизнеса, которая позволяет показать качество и стиль." data-lightbox-meta="Коммерция · Бренд">
-              <img src="https://picsum.photos/id/1036/900/700" alt="Коммерческая съёмка для бренда" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Съёмка бренда</strong>
-                <span>Коммерция</span>
-              </div>
-            </article>
-
-            <article class="portfolio-item" data-category="portrait" data-span="tall" data-lightbox-image="https://picsum.photos/id/1040/1200/800" data-lightbox-title="Портрет на фоне города" data-lightbox-description="Городский ритм, графичные линии и мягкий вечерний свет создают образ, где есть и характер, и романтика." data-lightbox-meta="Портрет · Город">
-              <img src="https://picsum.photos/id/1040/800/1200" alt="Портрет на фоне городской архитектуры" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Городской портрет</strong>
-                <span>Портреты</span>
-              </div>
-            </article>
-
-            <article class="portfolio-item" data-category="wedding" data-span="small" data-lightbox-image="https://picsum.photos/id/1047/1200/800" data-lightbox-title="Общий танец" data-lightbox-description="Свадебное настроение, где важны не постановки, а принадлежность моменту, лёгкость и счастье." data-lightbox-meta="Свадьба · Вечер">
-              <img src="https://picsum.photos/id/1047/700/900" alt="Свадебный вечерний танец" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Общий танец</strong>
-                <span>Свадьбы</span>
-              </div>
-            </article>
-
-            <article class="portfolio-item" data-category="commercial" data-span="normal" data-lightbox-image="https://picsum.photos/id/1050/1400/900" data-lightbox-title="Продуктовая визуализация" data-lightbox-description="Красивые, лаконичные кадры на фоне со вкусом, которые помогают бренду говорить с аудиторией на её языке." data-lightbox-meta="Коммерция · Продукт">
-              <img src="https://picsum.photos/id/1050/900/700" alt="Продуктовая photographie для бренда" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Продуктовая визуализация</strong>
-                <span>Коммерция</span>
-              </div>
-            </article>
-
-            <article class="portfolio-item" data-category="reportage" data-span="small" data-lightbox-image="https://picsum.photos/id/1069/1200/800" data-lightbox-title="Семейный репортаж" data-lightbox-description="Естественная энергия, улыбки и движения, которые остаются в памяти больше, чем слова." data-lightbox-meta="Репортаж · Семья">
-              <img src="https://picsum.photos/id/1069/700/900" alt="Репортаж семейной прогулки" loading="lazy" />
-              <div class="portfolio-overlay">
-                <strong>Семейный день</strong>
-                <span>Репортаж</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a class="brand" href="index.html" aria-label="Главная">
-              <span class="brand-mark">A</span>
-              <span>Анна Воронцова</span>
-            </a>
-            <p>Профессиональная свадебная и портретная фотография в Москве.</p>
-          </div>
-
-          <div>
-            <h3>Навигация</h3>
-            <ul class="footer-list">
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="about.html">Обо мне</a></li>
-              <li><a href="services.html">Услуги</a></li>
-              <li><a href="contact.html">Контакты</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Контакты</h3>
-            <ul class="footer-list">
-              <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
-              <li><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></li>
-              <li><a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noreferrer">Instagram</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Город</h3>
-            <ul class="footer-list">
-              <li><span>Москва</span></li>
-              <li><span>Пн–Вс</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="meta-row">
-          <span>© <span id="currentYear">2026</span> Анна Воронцова</span>
-          <span>Любовь к свету и истории</span>
-        </div>
-      </div>
-    </footer>
-
-    <button class="scroll-top" type="button" aria-label="Наверх">↑</button>
-
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографии">
-      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Закрыть">✕</button>
-      <div class="lightbox-panel">
-        <img src="" alt="" />
-        <div class="lightbox-copy">
-          <div class="meta" data-lightbox-meta>Съёмка</div>
-          <h3 data-lightbox-title>Название</h3>
-          <p data-lightbox-description>Описание.</p>
-          <div class="lightbox-actions">
-            <a class="btn btn-primary btn-small" href="contact.html?type=wedding">Заказать похожую</a>
-          </div>
-        </div>
-      </div>
-      <div class="lightbox-nav">
-        <button id="lightboxPrev" type="button" aria-label="Предыдущее фото">←</button>
-        <button id="lightboxNext" type="button" aria-label="Следующее фото">→</button>
       </div>
     </div>
 
-    <script src="js/main.js"></script>
-  </body>
+    <section class="px-section-sm container-px" data-archive data-sequence aria-label="Кадры архива">
+      <noscript><p class="meta">Для фильтров и просмотра включите JavaScript.</p></noscript>
+      <div class="bgrid" data-archive-grid></div>
+
+      <div class="table-responsive d-none" data-archive-list>
+        <table class="table table-hover archive-table">
+          <caption class="meta">Индекс кадров: ID, название, категория, коллекция, формат, тон</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="thumb"><span class="visually-hidden">Миниатюра</span></th>
+              <th scope="col">ID</th>
+              <th scope="col">Title</th>
+              <th scope="col" class="d-none d-md-table-cell">Category</th>
+              <th scope="col" class="d-none d-lg-table-cell">Collection</th>
+              <th scope="col" class="d-none d-sm-table-cell">Ratio</th>
+              <th scope="col" class="d-none d-lg-table-cell">Tone</th>
+              <th scope="col"><span class="visually-hidden">Открыть</span></th>
+            </tr>
+          </thead>
+          <tbody data-archive-rows></tbody>
+        </table>
+      </div>
+
+      <div class="empty-state d-none" data-archive-empty>
+        <p class="meta text-cyan mb-2">No frames match</p>
+        <p class="display-6 mb-4">Ничего не найдено.</p>
+        <button type="button" class="btn btn-px" data-archive-reset>Reset filters</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-footer">
+    <div class="container-px pt-5">
+      <div class="row g-4 g-lg-5">
+        <div class="col-12 col-lg-4">
+          <p class="meta mb-3"><span class="status-dot me-2"></span>Visual archive — est. unknown</p>
+          <p class="text-2 mb-4">Цифровой архив фотографий: моменты, места, фрагменты. Индекс из 24 кадров в 5 коллекциях.</p>
+          <div class="social d-flex gap-2">
+            <a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noopener" aria-label="Instagram" data-bs-toggle="tooltip" data-bs-title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://t.me/anna_vorontsova_photo" target="_blank" rel="noopener" aria-label="Telegram" data-bs-toggle="tooltip" data-bs-title="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/79991234567" target="_blank" rel="noopener" aria-label="WhatsApp" data-bs-toggle="tooltip" data-bs-title="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto:hello@annavorontsova.ru" aria-label="Email" data-bs-toggle="tooltip" data-bs-title="Email"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h2>Archive</h2>
+          <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="portfolio.html">Archive</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h2>More</h2>
+          <ul>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="services.html">Commissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></li>
+            <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+            <li><span class="text-2">Москва · Пн–Вс, 10:00–20:00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-px overflow-hidden" aria-hidden="true">
+      <p class="display-word footer-word mt-5 mb-0" data-fit>PHOTO<span class="dot">.</span></p>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-px py-3 d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span class="meta">© <span data-year>2026</span> Анна Воронцова · Photo archive</span>
+        <span class="meta">Frames 0001–0024 — generated placeholders</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen photo viewer (Bootstrap modal) -->
+  <div class="modal fade viewer" id="viewer" tabindex="-1" aria-labelledby="viewerTitle" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="viewer-bar">
+          <div class="d-flex align-items-center gap-3 gap-md-4 min-w-0">
+            <span class="viewer-counter" aria-live="polite"><span class="cur" data-v="pos">01</span> / <span data-v="total">24</span></span>
+            <span class="meta d-none d-sm-inline">Archive / <b data-v="id">0001</b></span>
+            <span class="badge-px is-cyan" data-v="category">NIGHT</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <span class="meta kbd-hint d-none d-lg-inline me-2"><kbd>←</kbd> <kbd>→</kbd> navigate · <kbd>Esc</kbd> close</span>
+            <button type="button" class="btn btn-px btn-square" data-v-info data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="Frame record" data-bs-content="—" aria-label="Технические данные кадра"><i class="bi bi-info-lg" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-px btn-square" data-bs-dismiss="modal" aria-label="Закрыть просмотр"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="viewer-stage">
+          <button type="button" class="btn btn-px btn-square viewer-nav prev" data-v-prev aria-label="Предыдущий кадр"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+          <img class="viewer-img" data-v="img" alt="" draggable="false">
+          <button type="button" class="btn btn-px btn-square viewer-nav next" data-v-next aria-label="Следующий кадр"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          <span class="viewer-loading meta">Scanning frame…</span>
+        </div>
+        <div class="viewer-bar bottom">
+          <div>
+            <span class="meta" data-v="collection">Collection</span>
+            <h2 class="viewer-title" id="viewerTitle" data-v="title">Title</h2>
+            <p class="viewer-text" data-v="text"></p>
+          </div>
+          <dl class="viewer-specs meta mb-0">
+            <dt>Format</dt><dd data-v="format">—</dd>
+            <dt>Tone</dt><dd data-v="tone">—</dd>
+            <dt>Source</dt><dd>Generated</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 start-0 p-3" id="toasts" aria-live="polite"></div>
+  <button type="button" class="btn btn-px btn-square to-top" data-to-top aria-label="Наверх"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/viewer.js"></script>
+  <script src="js/archive.js"></script>
+</body>
 </html>

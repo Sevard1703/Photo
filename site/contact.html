@@ -1,204 +1,254 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Записаться на съёмку к Анне Воронцовой: свадебная, портретная и коммерческая фотография в Москве." />
-    <meta property="og:title" content="Контакты | Анна Воронцова" />
-    <meta property="og:description" content="Напишите мне, чтобы обсудить дату, формат и стиль съёмки." />
-    <meta property="og:image" content="https://picsum.photos/id/1066/1200/800" />
-    <title>Контакты | Анна Воронцова</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <a class="brand" href="index.html" aria-label="Анна Воронцова, главная страница">
-          <span class="brand-mark">A</span>
-          <span>Анна Воронцова</span>
-        </a>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Связаться с автором архива PHOTO.: контакты, соцсети и форма обратной связи.">
+  <meta name="theme-color" content="#08090b">
+  <meta property="og:title" content="Contact — PHOTO. Visual Archive">
+  <meta property="og:description" content="Связаться с автором архива PHOTO.: контакты, соцсети и форма обратной связи.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/archive/0004-1280.jpg">
+  <title>Contact — PHOTO. Visual Archive</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="contact">
+  <a class="visually-hidden-focusable" href="#main">К содержанию</a>
+  <div class="grid-lines" aria-hidden="true"></div>
 
-        <button class="mobile-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
-
-        <nav class="site-nav" aria-label="Главное меню">
-          <a href="index.html">Главная</a>
-          <a href="portfolio.html">Портфолио</a>
-          <a href="about.html">Обо мне</a>
-          <a href="services.html">Услуги</a>
-          <a href="blog.html">Блог</a>
-          <a class="active" href="contact.html">Контакты</a>
-        </nav>
-
-        <div class="nav-actions">
-          <button class="theme-toggle" type="button" aria-label="Переключить тему">☀</button>
-          <a class="btn btn-primary btn-small" href="contact.html">Заказать</a>
+  <header class="px-header">
+    <nav class="navbar navbar-expand-lg h-100" aria-label="Основная навигация">
+      <div class="container-px">
+        <div class="zone zone-brand">
+          <a class="px-logo" href="index.html" aria-label="PHOTO. — на главную">PHOTO<span class="dot">.</span></a>
+          <span class="meta">§06 — Contact</span>
+        </div>
+        <button class="btn btn-ghost menu-toggle d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu">Menu <span class="text-cyan">+</span></button>
+        <div class="offcanvas offcanvas-end px-offcanvas" tabindex="-1" id="siteMenu" aria-labelledby="siteMenuLabel">
+          <div class="offcanvas-header">
+            <a class="px-logo" href="index.html" id="siteMenuLabel">PHOTO<span class="dot">.</span></a>
+            <button type="button" class="btn btn-ghost menu-toggle" data-bs-dismiss="offcanvas" aria-label="Закрыть меню">Close <span class="text-cyan">×</span></button>
+          </div>
+          <div class="offcanvas-body p-lg-0 d-lg-flex flex-lg-row align-items-lg-stretch flex-grow-1">
+            <ul class="navbar-nav px-nav ps-lg-3 me-lg-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html"><span class="n">01</span>Index</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html"><span class="n">02</span>Archive</a></li>
+              <li class="nav-item"><a class="nav-link" href="collections.html"><span class="n">03</span>Collections</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html"><span class="n">04</span>About</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="n">05</span>More <i class="bi bi-chevron-down" aria-hidden="true"></i></a><ul class="dropdown-menu"><li><h2 class="dropdown-header">Также в архиве</h2></li><li><a class="dropdown-item" href="blog.html">Journal <span class="meta">Записи</span></a></li><li><a class="dropdown-item" href="services.html">Commissions <span class="meta">Съёмки на заказ</span></a></li></ul></li>
+            </ul>
+            <div class="zone zone-status">
+              <span class="meta d-flex align-items-center gap-2" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="24 кадров · 5 коллекций · индекс обновлён при сборке"><span class="status-dot"></span>Archive online</span>
+              <a class="btn btn-px" href="contact.html" aria-current="page">Contact <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
       </div>
+    </nav>
+  </header>
+
+  <main id="main">
+<header class="page-head container-px">
+      <p class="meta mb-3"><span class="text-cyan">§06</span> / Channel / open</p>
+      <h1 class="display-word" data-fit>Contact</h1>
     </header>
 
-    <main>
-      <section class="page-hero">
-        <div class="container">
-          <div class="page-title-wrap reveal">
-            <span class="page-kicker">Контакты</span>
-            <h1 class="page-title">Напишите мне — и мы создадим историю вместе.</h1>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="contact-grid reveal">
-            <div class="contact-panel">
-              <span class="eyebrow">Заявка</span>
-              <h2>Заполните форму</h2>
-
-              <form id="contactForm" novalidate>
-                <div class="input-row">
-                  <div class="form-group">
-                    <label for="name">Имя</label>
-                    <input id="name" name="name" type="text" placeholder="Как к вам обращаться" required />
-                  </div>
-
-                  <div class="form-group">
-                    <label for="phone">Телефон</label>
-                    <input id="phone" name="phone" type="tel" placeholder="+7 (999) 123-45-67" required />
-                  </div>
-                </div>
-
-                <div class="input-row">
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="name@example.com" required />
-                  </div>
-
-                  <div class="form-group">
-                    <label for="shootType">Тип съёмки</label>
-                    <select id="shootType" name="shootType">
-                      <option value="wedding">Свадебная</option>
-                      <option value="portrait">Портретная</option>
-                      <option value="love">Love Story</option>
-                      <option value="reportage">Репортаж</option>
-                      <option value="commercial">Коммерческая</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="date">Предпочтительная дата</label>
-                  <input id="date" name="date" type="date" />
-                </div>
-
-                <div class="form-group">
-                  <label for="message">Расскажите подробнее</label>
-                  <textarea id="message" name="message" placeholder="Кратко опишите задачу, желаемую атмосферу и дату события."></textarea>
-                </div>
-
-                <div class="checkbox-row form-group">
-                  <input id="agree" name="agree" type="checkbox" />
-                  <label for="agree">Согласен на обработку персональных данных</label>
-                </div>
-
-                <button class="btn btn-primary" type="submit">Отправить заявку</button>
-                <div id="formStatus" class="form-status" aria-live="polite"></div>
-              </form>
+    <section class="px-section container-px" aria-label="Контакты и форма">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-4 order-lg-2">
+          <div class="card mb-4">
+            <div class="card-header"><span>Direct lines</span><span class="num">C.01</span></div>
+            <div class="card-body">
+              <dl class="spec">
+                <dt>Email</dt><dd><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></dd>
+                <dt>Phone</dt><dd><a href="tel:+79991234567">+7 (999) 123-45-67</a></dd>
+                <dt>Instagram</dt><dd><a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noopener">@anna.vorontsova.photo</a></dd>
+                <dt>Telegram</dt><dd><a href="https://t.me/anna_vorontsova_photo" target="_blank" rel="noopener">@anna_vorontsova_photo</a></dd>
+                <dt>WhatsApp</dt><dd><a href="https://wa.me/79991234567" target="_blank" rel="noopener">Написать</a></dd>
+              </dl>
             </div>
-
-            <div class="contact-panel">
-              <span class="eyebrow">Контакты</span>
-              <h2>Свяжитесь со мной</h2>
-
-              <ul class="info-list">
-                <li>
-                  <strong>Телефон</strong>
-                  <a href="tel:+79991234567">+7 (999) 123-45-67</a>
-                </li>
-                <li>
-                  <strong>Email</strong>
-                  <a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a>
-                </li>
-                <li>
-                  <strong>Instagram</strong>
-                  <a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noreferrer">@anna.vorontsova.photo</a>
-                </li>
-                <li>
-                  <strong>Telegram</strong>
-                  <a href="https://t.me/anna_vorontsova_photo" target="_blank" rel="noreferrer">@anna_vorontsova_photo</a>
-                </li>
-                <li>
-                  <strong>WhatsApp</strong>
-                  <a href="https://wa.me/79991234567" target="_blank" rel="noreferrer">Написать в WhatsApp</a>
-                </li>
-              </ul>
-
-              <div class="map-placeholder" aria-label="Карта Москвы"></div>
-
-              <ul class="info-list" style="margin-top: 1.5rem;">
-                <li>
-                  <strong>Часы работы</strong>
-                  <span>Понедельник — воскресенье, 10:00–20:00</span>
-                </li>
-                <li>
-                  <strong>Город</strong>
-                  <span>Москва</span>
-                </li>
-              </ul>
+          </div>
+          <div class="card">
+            <div class="card-header"><span>Hours / city</span><span class="num">C.02</span></div>
+            <div class="card-body">
+              <dl class="spec mb-0">
+                <dt>Часы</dt><dd>Пн — Вс, 10:00–20:00</dd>
+                <dt>Город</dt><dd>Москва</dd>
+              </dl>
             </div>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a class="brand" href="index.html" aria-label="Главная">
-              <span class="brand-mark">A</span>
-              <span>Анна Воронцова</span>
-            </a>
-            <p>Свадебная и портретная фотография в Москве — теплые, живые и эмоциональные кадры.</p>
+        <div class="col-lg-7 order-lg-1">
+          <p class="lead mb-4">Вопрос о кадре, коллекции или съёмке — напишите. <span class="serif-accent text-2">Каждое письмо читается.</span></p>
+          <div class="alert border-px bg-2 d-flex gap-3 mb-4" role="note">
+            <i class="bi bi-broadcast text-cyan" aria-hidden="true"></i>
+            <div><span class="meta d-block mb-1 text-cyan">Demo mode</span><span class="text-2 small">Сервер для отправки не подключён: форма проверяет данные, но письмо никуда не уходит.</span></div>
           </div>
-
-          <div>
-            <h3>Навигация</h3>
-            <ul class="footer-list">
-              <li><a href="portfolio.html">Портфолио</a></li>
-              <li><a href="about.html">Обо мне</a></li>
-              <li><a href="services.html">Услуги</a></li>
-              <li><a href="blog.html">Блог</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Контакты</h3>
-            <ul class="footer-list">
-              <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
-              <li><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></li>
-              <li><a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noreferrer">Instagram</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Город</h3>
-            <ul class="footer-list">
-              <li><span>Москва</span></li>
-              <li><span>Пн–Вс, 10:00–20:00</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="meta-row">
-          <span>© <span id="currentYear">2026</span> Анна Воронцова</span>
-          <span>Давайте создадим вашу историю</span>
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label class="form-label" for="name">01 / Name</label>
+                <input class="form-control" id="name" name="name" type="text" minlength="2" maxlength="60" placeholder="Как к вам обращаться" autocomplete="name" required>
+                <div class="invalid-feedback">Введите имя — минимум 2 символа.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="email">02 / Email</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+                  <div class="invalid-feedback">Нужен корректный email.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="subject">03 / Subject</label>
+                <select class="form-select" id="subject" name="subject" required>
+                  <option value="" selected disabled>Выберите тему</option>
+                  <option value="archive">Архив / отдельный кадр</option>
+                  <option value="wedding">Свадебная съёмка</option>
+                  <option value="portrait">Портретная съёмка</option>
+                  <option value="love">Love Story</option>
+                  <option value="reportage">Репортаж</option>
+                  <option value="commercial">Коммерческая съёмка</option>
+                  <option value="other">Другое</option>
+                </select>
+                <div class="invalid-feedback">Выберите тему письма.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="phone">04 / Phone <span class="text-muted-px">(optional)</span></label>
+                <input class="form-control" id="phone" name="phone" type="tel" placeholder="+7 (999) 123-45-67" pattern="[0-9+\(\)\s\-]{7,20}" autocomplete="tel">
+                <div class="invalid-feedback">Только цифры, пробелы, + ( ) -.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label d-flex justify-content-between" for="message"><span>05 / Message</span><span data-char-count>0 / 1000</span></label>
+                <textarea class="form-control" id="message" name="message" minlength="20" maxlength="1000" placeholder="Кратко опишите задачу, кадр или идею" required></textarea>
+                <div class="invalid-feedback">Сообщение — минимум 20 символов.</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="agree" name="agree" required>
+                  <label class="form-check-label" for="agree">Согласен на обработку персональных данных</label>
+                  <div class="invalid-feedback">Нужно согласие.</div>
+                </div>
+              </div>
+              <div class="col-12 d-flex flex-wrap gap-3 align-items-center">
+                <button class="btn btn-cyan" type="submit">Transmit <i class="bi bi-send ms-1" aria-hidden="true"></i></button>
+                <button class="btn btn-ghost" type="reset">Clear</button>
+              </div>
+            </div>
+            <div id="formStatus" class="d-none" aria-live="polite"></div>
+          </form>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <button class="scroll-top" type="button" aria-label="Наверх">↑</button>
-    <script src="js/main.js"></script>
-  </body>
+  <footer class="px-footer">
+    <div class="container-px pt-5">
+      <div class="row g-4 g-lg-5">
+        <div class="col-12 col-lg-4">
+          <p class="meta mb-3"><span class="status-dot me-2"></span>Visual archive — est. unknown</p>
+          <p class="text-2 mb-4">Цифровой архив фотографий: моменты, места, фрагменты. Индекс из 24 кадров в 5 коллекциях.</p>
+          <div class="social d-flex gap-2">
+            <a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noopener" aria-label="Instagram" data-bs-toggle="tooltip" data-bs-title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://t.me/anna_vorontsova_photo" target="_blank" rel="noopener" aria-label="Telegram" data-bs-toggle="tooltip" data-bs-title="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/79991234567" target="_blank" rel="noopener" aria-label="WhatsApp" data-bs-toggle="tooltip" data-bs-title="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto:hello@annavorontsova.ru" aria-label="Email" data-bs-toggle="tooltip" data-bs-title="Email"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h2>Archive</h2>
+          <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="portfolio.html">Archive</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h2>More</h2>
+          <ul>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="services.html">Commissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></li>
+            <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+            <li><span class="text-2">Москва · Пн–Вс, 10:00–20:00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-px overflow-hidden" aria-hidden="true">
+      <p class="display-word footer-word mt-5 mb-0" data-fit>PHOTO<span class="dot">.</span></p>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-px py-3 d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span class="meta">© <span data-year>2026</span> Анна Воронцова · Photo archive</span>
+        <span class="meta">Frames 0001–0024 — generated placeholders</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen photo viewer (Bootstrap modal) -->
+  <div class="modal fade viewer" id="viewer" tabindex="-1" aria-labelledby="viewerTitle" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="viewer-bar">
+          <div class="d-flex align-items-center gap-3 gap-md-4 min-w-0">
+            <span class="viewer-counter" aria-live="polite"><span class="cur" data-v="pos">01</span> / <span data-v="total">24</span></span>
+            <span class="meta d-none d-sm-inline">Archive / <b data-v="id">0001</b></span>
+            <span class="badge-px is-cyan" data-v="category">NIGHT</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <span class="meta kbd-hint d-none d-lg-inline me-2"><kbd>←</kbd> <kbd>→</kbd> navigate · <kbd>Esc</kbd> close</span>
+            <button type="button" class="btn btn-px btn-square" data-v-info data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="Frame record" data-bs-content="—" aria-label="Технические данные кадра"><i class="bi bi-info-lg" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-px btn-square" data-bs-dismiss="modal" aria-label="Закрыть просмотр"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="viewer-stage">
+          <button type="button" class="btn btn-px btn-square viewer-nav prev" data-v-prev aria-label="Предыдущий кадр"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+          <img class="viewer-img" data-v="img" alt="" draggable="false">
+          <button type="button" class="btn btn-px btn-square viewer-nav next" data-v-next aria-label="Следующий кадр"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          <span class="viewer-loading meta">Scanning frame…</span>
+        </div>
+        <div class="viewer-bar bottom">
+          <div>
+            <span class="meta" data-v="collection">Collection</span>
+            <h2 class="viewer-title" id="viewerTitle" data-v="title">Title</h2>
+            <p class="viewer-text" data-v="text"></p>
+          </div>
+          <dl class="viewer-specs meta mb-0">
+            <dt>Format</dt><dd data-v="format">—</dd>
+            <dt>Tone</dt><dd data-v="tone">—</dd>
+            <dt>Source</dt><dd>Generated</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 start-0 p-3" id="toasts" aria-live="polite"></div>
+  <button type="button" class="btn btn-px btn-square to-top" data-to-top aria-label="Наверх"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/viewer.js"></script>
+</body>
 </html>

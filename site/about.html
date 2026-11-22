@@ -1,224 +1,245 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="История Анны Воронцовой, её фотографический подход, оборудование и как проходит процесс съёмки." />
-    <meta property="og:title" content="Обо мне | Анна Воронцова" />
-    <meta property="og:description" content="Фотограф, который снимает теплые, живые и правдивые истории." />
-    <meta property="og:image" content="https://picsum.photos/id/1027/1200/800" />
-    <title>Обо мне | Анна Воронцова</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <a class="brand" href="index.html" aria-label="Анна Воронцова, главная страница">
-          <span class="brand-mark">A</span>
-          <span>Анна Воронцова</span>
-        </a>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="О фотографе и подходе архива PHOTO.: философия, визуальный подход, оборудование.">
+  <meta name="theme-color" content="#08090b">
+  <meta property="og:title" content="About — PHOTO. Visual Archive">
+  <meta property="og:description" content="О фотографе и подходе архива PHOTO.: философия, визуальный подход, оборудование.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/archive/0004-1280.jpg">
+  <title>About — PHOTO. Visual Archive</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="about">
+  <a class="visually-hidden-focusable" href="#main">К содержанию</a>
+  <div class="grid-lines" aria-hidden="true"></div>
 
-        <button class="mobile-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
-
-        <nav class="site-nav" aria-label="Главное меню">
-          <a href="index.html">Главная</a>
-          <a href="portfolio.html">Портфолио</a>
-          <a class="active" href="about.html">Обо мне</a>
-          <a href="services.html">Услуги</a>
-          <a href="blog.html">Блог</a>
-          <a href="contact.html">Контакты</a>
-        </nav>
-
-        <div class="nav-actions">
-          <button class="theme-toggle" type="button" aria-label="Переключить тему">☀</button>
-          <a class="btn btn-primary btn-small" href="contact.html">Заказать</a>
+  <header class="px-header">
+    <nav class="navbar navbar-expand-lg h-100" aria-label="Основная навигация">
+      <div class="container-px">
+        <div class="zone zone-brand">
+          <a class="px-logo" href="index.html" aria-label="PHOTO. — на главную">PHOTO<span class="dot">.</span></a>
+          <span class="meta">§04 — About</span>
+        </div>
+        <button class="btn btn-ghost menu-toggle d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu">Menu <span class="text-cyan">+</span></button>
+        <div class="offcanvas offcanvas-end px-offcanvas" tabindex="-1" id="siteMenu" aria-labelledby="siteMenuLabel">
+          <div class="offcanvas-header">
+            <a class="px-logo" href="index.html" id="siteMenuLabel">PHOTO<span class="dot">.</span></a>
+            <button type="button" class="btn btn-ghost menu-toggle" data-bs-dismiss="offcanvas" aria-label="Закрыть меню">Close <span class="text-cyan">×</span></button>
+          </div>
+          <div class="offcanvas-body p-lg-0 d-lg-flex flex-lg-row align-items-lg-stretch flex-grow-1">
+            <ul class="navbar-nav px-nav ps-lg-3 me-lg-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html"><span class="n">01</span>Index</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html"><span class="n">02</span>Archive</a></li>
+              <li class="nav-item"><a class="nav-link" href="collections.html"><span class="n">03</span>Collections</a></li>
+              <li class="nav-item"><a class="nav-link active" href="about.html" aria-current="page"><span class="n">04</span>About</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="n">05</span>More <i class="bi bi-chevron-down" aria-hidden="true"></i></a><ul class="dropdown-menu"><li><h2 class="dropdown-header">Также в архиве</h2></li><li><a class="dropdown-item" href="blog.html">Journal <span class="meta">Записи</span></a></li><li><a class="dropdown-item" href="services.html">Commissions <span class="meta">Съёмки на заказ</span></a></li></ul></li>
+            </ul>
+            <div class="zone zone-status">
+              <span class="meta d-flex align-items-center gap-2" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="24 кадров · 5 коллекций · индекс обновлён при сборке"><span class="status-dot"></span>Archive online</span>
+              <a class="btn btn-px" href="contact.html">Contact <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
       </div>
+    </nav>
+  </header>
+
+  <main id="main">
+<header class="page-head container-px">
+      <p class="meta mb-3"><span class="text-cyan">§04</span> / Author / record 001</p>
+      <h1 class="display-word" data-fit>About</h1>
     </header>
 
-    <main>
-      <section class="page-hero">
-        <div class="container">
-          <div class="page-title-wrap reveal">
-            <span class="page-kicker">Обо мне</span>
-            <h1 class="page-title">Снимаю не “парадные” фото, а живую жизнь.</h1>
-          </div>
+    <!-- Editable block: biography (existing text kept from the original site) -->
+    <section class="px-section container-px" aria-labelledby="bioTitle">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <p class="meta mb-3">Author</p>
+          <h2 class="display-5 mb-4" id="bioTitle">Анна Воронцова</h2>
+          <p class="serif-accent fs-2 text-2 lh-sm mb-4">«Фотография для меня — это способ хранить тепло времени.»</p>
+          <dl class="spec">
+            <dt>Город</dt><dd>Москва</dd>
+            <dt>Жанры</dt><dd>Свадьбы, love story, портреты, репортаж</dd>
+            <dt>Камера</dt><dd>Sony A7 IV</dd>
+          </dl>
         </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="two-col reveal">
-            <div class="about-visual">
-              <img src="https://picsum.photos/id/1027/1200/1500" alt="Анна Воронцова, фотограф" loading="lazy" />
-            </div>
-
-            <div>
-              <span class="eyebrow">История</span>
-              <h2>Фотография для меня — это способ хранить тепло времени.</h2>
-              <p>Я родилась и выросла в Москве, и ещё в детстве любила наблюдать — за светом, за людьми, за тем, как в обычный день вдруг возникает особенное настроение. Сначала это было хобби, потом — сознательный путь, в котором я училась видеть красоту в мелочах и не спорить с живой, настоящей атмосферой.</p>
-              <p>Сейчас я снимаю свадьбы, love story и портреты, помогая людям сохранить не идеальную картинку, а настоящую историю. Мне важно, чтобы в кадре было ощущение жизни: дыхание, улыбка, неловкость, радость, любовь, предвкушение.</p>
-              <p class="signoff">Анна</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-sm">
-        <div class="container">
-          <div class="section-top reveal">
-            <span class="eyebrow">Подход</span>
-            <h2>Моя работа строится на доверии, атмосфере и внимании к каждой детали.</h2>
-          </div>
-
-          <div class="info-grid reveal">
-            <article class="bio-card">
-              <h3>Как я работаю</h3>
-              <p>Мне неинтересны постановочные пустые кадры. Я люблю тёплую, живую съёмку, где люди чувствуют себя свободно и могут быть собой.</p>
-            </article>
-
-            <article class="bio-card">
-              <h3>Философия</h3>
-              <p>Всё, что становится важным, всегда выглядит просто и естественно. Я стремлюсь создавать фотографии, которые будут говорить не «как красиво», а «как тепло».</p>
-            </article>
-
-            <article class="bio-card">
-              <h3>Моя цель</h3>
-              <p>Сохранить не только внешний вид дня, но и его душу: шёпот, свет, движение, настроение, живое присутствие людей рядом.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-sm">
-        <div class="container">
-          <div class="section-top reveal">
-            <span class="eyebrow">Оборудование</span>
-            <h2>Инструменты, которые помогают мне передать свет и характер.</h2>
-          </div>
-
-          <div class="info-grid reveal">
-            <article class="bio-card">
-              <h3>Камера</h3>
-              <p>Sony A7 IV — универсальная система, которая позволяет работать с кинематографической глубиной и точностью в световых нюансах.</p>
-            </article>
-
-            <article class="bio-card">
-              <h3>Объективы</h3>
-              <p>Портретная и свадебная оптика, которая даёт мягкий, живой рисунок и естественную глубину на кадре.</p>
-            </article>
-
-            <article class="bio-card">
-              <h3>Освещение</h3>
-              <p>Минимум техники, максимум световой композиции. Это позволяет делать кадры максимально естественными и выразительными.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-sm">
-        <div class="container">
-          <div class="section-top reveal">
-            <span class="eyebrow">Как проходит съёмка</span>
-            <h2>Понятный и спокойный процесс от первого контакта до финального фотоальбома.</h2>
-          </div>
-
-          <div class="timeline reveal">
-            <div class="timeline-item" data-step="1">
-              <h3>Знакомство</h3>
-              <p>Обсуждаем формат, стиль и детали, чтобы я лучше понимала вашу историю и ожидания.</p>
-            </div>
-
-            <div class="timeline-item" data-step="2">
-              <h3>Подготовка</h3>
-              <p>Готовлю план локаций, тайминг, рекомендации и визуальный стиль съёмки.</p>
-            </div>
-
-            <div class="timeline-item" data-step="3">
-              <h3>Съёмка</h3>
-              <p>Делаю процесс естественным и комфортным — без спешки, но с живым ритмом и вниманием к деталям.</p>
-            </div>
-
-            <div class="timeline-item" data-step="4">
-              <h3>Готовый результат</h3>
-              <p>После обработки вы получаете красивую, чувствительную галерею, в которой есть душа дня.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-sm">
-        <div class="container">
-          <div class="section-top reveal">
-            <span class="eyebrow">За кадром</span>
-            <h2>Немного жизни вне кадра — чтобы вы знали, как мы работаем на самом деле.</h2>
-          </div>
-
-          <div class="gallery-grid reveal">
-            <article class="gallery-card">
-              <img src="https://picsum.photos/id/1075/800/1000" alt="Фотограф за кадром" loading="lazy" />
-            </article>
-            <article class="gallery-card">
-              <img src="https://picsum.photos/id/1080/800/1000" alt="Подготовка к съёмке" loading="lazy" />
-            </article>
-            <article class="gallery-card">
-              <img src="https://picsum.photos/id/1084/800/1000" alt="Рассвет во время съёмки" loading="lazy" />
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a class="brand" href="index.html" aria-label="Главная">
-              <span class="brand-mark">A</span>
-              <span>Анна Воронцова</span>
-            </a>
-            <p>Фотография, в которой важны не только ракурсы, но и настроение каждого дня.</p>
-          </div>
-
-          <div>
-            <h3>Навигация</h3>
-            <ul class="footer-list">
-              <li><a href="portfolio.html">Портфолио</a></li>
-              <li><a href="services.html">Услуги</a></li>
-              <li><a href="blog.html">Блог</a></li>
-              <li><a href="contact.html">Контакты</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Контакты</h3>
-            <ul class="footer-list">
-              <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
-              <li><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></li>
-              <li><a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noreferrer">Instagram</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Город</h3>
-            <ul class="footer-list">
-              <li><span>Москва</span></li>
-              <li><span>Пн–Вс</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="meta-row">
-          <span>© <span id="currentYear">2026</span> Анна Воронцова</span>
-          <span>С любовью к свету</span>
+        <div class="col-lg-6 offset-lg-1">
+          <p class="lead">Я родилась и выросла в Москве, и ещё в детстве любила наблюдать — за светом, за людьми, за тем, как в обычный день вдруг возникает особенное настроение.</p>
+          <p class="text-2">Сначала это было хобби, потом — сознательный путь, в котором я училась видеть красоту в мелочах и не спорить с живой, настоящей атмосферой.</p>
+          <p class="text-2">Сейчас я снимаю свадьбы, love story и портреты, помогая людям сохранить не идеальную картинку, а настоящую историю. Мне важно, чтобы в кадре было ощущение жизни: дыхание, улыбка, неловкость, радость, любовь, предвкушение.</p>
+          <p class="serif-accent fs-3 mb-0">Анна</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <button class="scroll-top" type="button" aria-label="Наверх">↑</button>
-    <script src="js/main.js"></script>
-  </body>
+    <section class="px-section-sm container-px" aria-labelledby="approachTitle">
+      <div class="section-index">
+        <span class="meta num">01</span>
+        <h2 class="meta mb-0 text-uppercase" id="approachTitle">Philosophy / approach</h2>
+        <span class="line"></span>
+      </div>
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-7">
+          <div class="accordion" id="approach">
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ap1" aria-expanded="true" aria-controls="ap1"><span class="meta">A.01</span>Как я работаю</button></h3>
+              <div id="ap1" class="accordion-collapse collapse show" data-bs-parent="#approach"><div class="accordion-body">Мне неинтересны постановочные пустые кадры. Я люблю тёплую, живую съёмку, где люди чувствуют себя свободно и могут быть собой.</div></div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ap2" aria-expanded="false" aria-controls="ap2"><span class="meta">A.02</span>Философия</button></h3>
+              <div id="ap2" class="accordion-collapse collapse" data-bs-parent="#approach"><div class="accordion-body">Всё, что становится важным, всегда выглядит просто и естественно. Я стремлюсь создавать фотографии, которые будут говорить не «как красиво», а «как тепло».</div></div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ap3" aria-expanded="false" aria-controls="ap3"><span class="meta">A.03</span>Цель</button></h3>
+              <div id="ap3" class="accordion-collapse collapse" data-bs-parent="#approach"><div class="accordion-body">Сохранить не только внешний вид дня, но и его душу: шёпот, свет, движение, настроение, живое присутствие людей рядом.</div></div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ap4" aria-expanded="false" aria-controls="ap4"><span class="meta">A.04</span>Визуальный подход архива</button></h3>
+              <div id="ap4" class="accordion-collapse collapse" data-bs-parent="#approach"><div class="accordion-body">Архив собран по принципу «меньше сюжета — больше света»: тёмный фон, минимум цвета, точные подписи. Каждый кадр получает номер, категорию и место в серии — так коллекцию можно читать как книгу.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card position-relative panel-cut">
+            <div class="card-header"><span>Equipment</span><span class="num">E.01–03</span></div>
+            <div class="card-body">
+              <ul class="list-index">
+                <li><span><strong>Камера.</strong> Sony A7 IV — универсальная система с кинематографической глубиной и точностью в световых нюансах.</span></li>
+                <li><span><strong>Объективы.</strong> Портретная и свадебная оптика с мягким, живым рисунком и естественной глубиной.</span></li>
+                <li><span><strong>Свет.</strong> Минимум техники, максимум световой композиции — чтобы кадры оставались естественными.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-section-sm container-px" aria-labelledby="framesTitle">
+      <div class="section-index">
+        <span class="meta num">02</span>
+        <h2 class="meta mb-0 text-uppercase" id="framesTitle">About the frames</h2>
+        <span class="line"></span>
+      </div>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-5 col-lg-4"><button type="button" class="tile " data-photo="0024" aria-label="Открыть кадр 0024: AFTERNOON FRAME"><div class="frame " style="--ar: 1600 / 2000; --ph: #594c3e"><img src="images/archive/0024-1280.jpg" srcset="images/archive/0024-640.jpg 512w, images/archive/0024-1280.jpg 1024w, images/archive/0024-2000.jpg 1600w" sizes="(min-width: 768px) 33vw, 100vw" width="1600" height="2000" alt="Свет из окна ложится на стену искажённой решёткой." loading="lazy" decoding="async"></div><span class="tile-id meta">№0024</span><span class="tile-cap"><span class="t">AFTERNOON FRAME</span><span class="meta">ABSTRACT · 4:5 · COLOR</span></span></button></div>
+        <div class="col-md-7 col-lg-6 offset-lg-1">
+          <p class="display-6 mb-3">Сейчас в архиве — <span class="text-cyan">24</span> генеративных кадров.</p>
+          <p class="text-2">Они созданы для этой версии сайта как заглушки и честно подписаны так в метаданных: «Captured / unknown — generated». Чтобы заменить их своими фотографиями, положите файлы в <code>images/archive/</code> и обновите описание в <code>js/data.js</code> — сетка, фильтры, коллекции и просмотрщик подхватят изменения.</p>
+          <a class="link-arrow" href="portfolio.html">Open the index <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-footer">
+    <div class="container-px pt-5">
+      <div class="row g-4 g-lg-5">
+        <div class="col-12 col-lg-4">
+          <p class="meta mb-3"><span class="status-dot me-2"></span>Visual archive — est. unknown</p>
+          <p class="text-2 mb-4">Цифровой архив фотографий: моменты, места, фрагменты. Индекс из 24 кадров в 5 коллекциях.</p>
+          <div class="social d-flex gap-2">
+            <a href="https://instagram.com/anna.vorontsova.photo" target="_blank" rel="noopener" aria-label="Instagram" data-bs-toggle="tooltip" data-bs-title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://t.me/anna_vorontsova_photo" target="_blank" rel="noopener" aria-label="Telegram" data-bs-toggle="tooltip" data-bs-title="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/79991234567" target="_blank" rel="noopener" aria-label="WhatsApp" data-bs-toggle="tooltip" data-bs-title="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto:hello@annavorontsova.ru" aria-label="Email" data-bs-toggle="tooltip" data-bs-title="Email"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h2>Archive</h2>
+          <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="portfolio.html">Archive</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h2>More</h2>
+          <ul>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="services.html">Commissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:hello@annavorontsova.ru">hello@annavorontsova.ru</a></li>
+            <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+            <li><span class="text-2">Москва · Пн–Вс, 10:00–20:00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-px overflow-hidden" aria-hidden="true">
+      <p class="display-word footer-word mt-5 mb-0" data-fit>PHOTO<span class="dot">.</span></p>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-px py-3 d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span class="meta">© <span data-year>2026</span> Анна Воронцова · Photo archive</span>
+        <span class="meta">Frames 0001–0024 — generated placeholders</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen photo viewer (Bootstrap modal) -->
+  <div class="modal fade viewer" id="viewer" tabindex="-1" aria-labelledby="viewerTitle" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="viewer-bar">
+          <div class="d-flex align-items-center gap-3 gap-md-4 min-w-0">
+            <span class="viewer-counter" aria-live="polite"><span class="cur" data-v="pos">01</span> / <span data-v="total">24</span></span>
+            <span class="meta d-none d-sm-inline">Archive / <b data-v="id">0001</b></span>
+            <span class="badge-px is-cyan" data-v="category">NIGHT</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <span class="meta kbd-hint d-none d-lg-inline me-2"><kbd>←</kbd> <kbd>→</kbd> navigate · <kbd>Esc</kbd> close</span>
+            <button type="button" class="btn btn-px btn-square" data-v-info data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="Frame record" data-bs-content="—" aria-label="Технические данные кадра"><i class="bi bi-info-lg" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-px btn-square" data-bs-dismiss="modal" aria-label="Закрыть просмотр"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="viewer-stage">
+          <button type="button" class="btn btn-px btn-square viewer-nav prev" data-v-prev aria-label="Предыдущий кадр"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+          <img class="viewer-img" data-v="img" alt="" draggable="false">
+          <button type="button" class="btn btn-px btn-square viewer-nav next" data-v-next aria-label="Следующий кадр"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          <span class="viewer-loading meta">Scanning frame…</span>
+        </div>
+        <div class="viewer-bar bottom">
+          <div>
+            <span class="meta" data-v="collection">Collection</span>
+            <h2 class="viewer-title" id="viewerTitle" data-v="title">Title</h2>
+            <p class="viewer-text" data-v="text"></p>
+          </div>
+          <dl class="viewer-specs meta mb-0">
+            <dt>Format</dt><dd data-v="format">—</dd>
+            <dt>Tone</dt><dd data-v="tone">—</dd>
+            <dt>Source</dt><dd>Generated</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 start-0 p-3" id="toasts" aria-live="polite"></div>
+  <button type="button" class="btn btn-px btn-square to-top" data-to-top aria-label="Наверх"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/viewer.js"></script>
+</body>
 </html>
